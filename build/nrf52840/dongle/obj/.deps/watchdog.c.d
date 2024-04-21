@@ -58,9 +58,7 @@ build/nrf52840/dongle/obj/watchdog.o: \
  ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/drivers/include/nrfx_wdt.h \
  ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_wdt.h \
  ../../arch/cpu/nrf52840/lib/nrf52-sdk/components/libraries/util/app_error.h \
- ../../os/sys/log.h ../../os/net/linkaddr.h ../../os/sys/log-conf.h \
- ../../os/net/ipv6/uip.h ../../os/net/ipv6/uipopt.h \
- ../../os/net/ipv6/uipbuf.h ../../os/net/ipv6/tcpip.h
+ ../../os/sys/log.h ../../os/net/linkaddr.h ../../os/sys/log-conf.h
 
 ../../os/contiki.h:
 
@@ -207,11 +205,3 @@ build/nrf52840/dongle/obj/watchdog.o: \
 ../../os/net/linkaddr.h:
 
 ../../os/sys/log-conf.h:
-
-../../os/net/ipv6/uip.h:
-
-../../os/net/ipv6/uipopt.h:
-
-../../os/net/ipv6/uipbuf.h:
-
-../../os/net/ipv6/tcpip.h:

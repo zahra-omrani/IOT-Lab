@@ -4,8 +4,13 @@ TARGET ?= nrf52840
 all: $(CONTIKI_PROJECT)
 
 CONTIKI = ../..
-include $(CONTIKI)/Makefile.include
+
+
+MAKE_MAC = MAKE_MAC_CSMA
+MAKE_NET = MAKE_NET_NULLNET
 
 run: $(CONTIKI_PROJECT).$(TARGET)
 	$(RUNNER) $(TARGET)$(EXTENSION)
+
+include $(CONTIKI)/Makefile.include
 

@@ -1,5 +1,7 @@
-build/nrf52840/dongle/obj/gpio-hal.o: ../../os/dev/gpio-hal.c \
- ../../os/contiki.h ../../arch/platform/nrf52840/./contiki-conf.h \
+build/nrf52840/dongle/obj/nullrouting.o: \
+ ../../os/net/routing/nullrouting/nullrouting.c \
+ ../../os/net/routing/routing.h ../../os/contiki.h \
+ ../../arch/platform/nrf52840/./contiki-conf.h \
  ../../arch/platform/nrf52840/dongle/nrf52840-board-def.h \
  ../../arch/cpu/nrf52840/lib/nrf52-sdk/components/boards/boards.h \
  ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_gpio.h \
@@ -53,13 +55,16 @@ build/nrf52840/dongle/obj/gpio-hal.o: ../../os/dev/gpio-hal.c \
  ../../os/sys/clock.h ../../os/sys/ctimer.h ../../os/sys/etimer.h \
  ../../os/sys/etimer.h ../../os/sys/rtimer.h ../../os/dev/watchdog.h \
  ../../arch/cpu/nrf52840/./rtimer-arch.h ../../os/sys/pt.h \
- ../../os/sys/clock.h ../../os/dev/gpio-hal.h \
- ../../arch/cpu/nrf52840/./dev/gpio-hal-arch.h \
- ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/drivers/include/nrfx_gpiote.h \
- ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_gpiote.h \
- ../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_gpio.h \
- ../../os/lib/list.h ../../os/sys/log.h ../../os/net/linkaddr.h \
- ../../os/sys/log-conf.h
+ ../../os/sys/clock.h ../../os/net/ipv6/uip.h ../../os/net/ipv6/uipopt.h \
+ ../../os/net/ipv6/uipbuf.h ../../os/net/linkaddr.h \
+ ../../os/net/ipv6/tcpip.h ../../os/net/ipv6/uip-ds6-nbr.h \
+ ../../os/net/ipv6/uip-nd6.h ../../os/sys/stimer.h \
+ ../../os/net/nbr-table.h ../../os/net/netstack.h ../../os/net/mac/mac.h \
+ ../../os/dev/radio.h ../../os/net/mac/framer/framer.h \
+ ../../os/net/ipv6/uip-ds6-route.h ../../os/lib/list.h \
+ ../../os/net/ipv6/uip-sr.h
+
+../../os/net/routing/routing.h:
 
 ../../os/contiki.h:
 
@@ -195,20 +200,34 @@ build/nrf52840/dongle/obj/gpio-hal.o: ../../os/dev/gpio-hal.c \
 
 ../../os/sys/clock.h:
 
-../../os/dev/gpio-hal.h:
+../../os/net/ipv6/uip.h:
 
-../../arch/cpu/nrf52840/./dev/gpio-hal-arch.h:
+../../os/net/ipv6/uipopt.h:
 
-../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/drivers/include/nrfx_gpiote.h:
-
-../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_gpiote.h:
-
-../../arch/cpu/nrf52840/lib/nrf52-sdk/modules/nrfx/hal/nrf_gpio.h:
-
-../../os/lib/list.h:
-
-../../os/sys/log.h:
+../../os/net/ipv6/uipbuf.h:
 
 ../../os/net/linkaddr.h:
 
-../../os/sys/log-conf.h:
+../../os/net/ipv6/tcpip.h:
+
+../../os/net/ipv6/uip-ds6-nbr.h:
+
+../../os/net/ipv6/uip-nd6.h:
+
+../../os/sys/stimer.h:
+
+../../os/net/nbr-table.h:
+
+../../os/net/netstack.h:
+
+../../os/net/mac/mac.h:
+
+../../os/dev/radio.h:
+
+../../os/net/mac/framer/framer.h:
+
+../../os/net/ipv6/uip-ds6-route.h:
+
+../../os/lib/list.h:
+
+../../os/net/ipv6/uip-sr.h:

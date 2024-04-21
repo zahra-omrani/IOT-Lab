@@ -54,10 +54,11 @@ build/nrf52840/dongle/obj/log.o: ../../os/sys/log.c ../../os/sys/log.h \
  ../../os/sys/clock.h ../../os/sys/ctimer.h ../../os/sys/etimer.h \
  ../../os/sys/etimer.h ../../os/sys/rtimer.h ../../os/dev/watchdog.h \
  ../../arch/cpu/nrf52840/./rtimer-arch.h ../../os/sys/pt.h \
- ../../os/sys/clock.h ../../os/sys/log-conf.h ../../os/net/ipv6/uip.h \
+ ../../os/sys/clock.h ../../os/sys/log-conf.h \
+ ../../os/net/ipv6/ip64-addr.h ../../os/net/ipv6/uip.h \
  ../../os/net/ipv6/uipopt.h ../../os/net/ipv6/uipbuf.h \
- ../../os/net/ipv6/tcpip.h ../../os/net/ipv6/ip64-addr.h \
- ../../os/net/ipv6/uiplib.h ../../os/services/deployment/deployment.h
+ ../../os/net/ipv6/tcpip.h ../../os/net/ipv6/uiplib.h \
+ ../../os/services/deployment/deployment.h
 
 ../../os/sys/log.h:
 
@@ -199,6 +200,8 @@ build/nrf52840/dongle/obj/log.o: ../../os/sys/log.c ../../os/sys/log.h \
 
 ../../os/sys/log-conf.h:
 
+../../os/net/ipv6/ip64-addr.h:
+
 ../../os/net/ipv6/uip.h:
 
 ../../os/net/ipv6/uipopt.h:
@@ -206,8 +209,6 @@ build/nrf52840/dongle/obj/log.o: ../../os/sys/log.c ../../os/sys/log.h \
 ../../os/net/ipv6/uipbuf.h:
 
 ../../os/net/ipv6/tcpip.h:
-
-../../os/net/ipv6/ip64-addr.h:
 
 ../../os/net/ipv6/uiplib.h:
 
